@@ -1,6 +1,7 @@
-/* 
- * TODO 1 (NIVEL 2 - Javadoc): Convierte este comentario de bloque a un comentario Javadoc oficial (/** ... */)
- * Incluye las etiquetas @author (tu Nombre y Cédula) y @version 1.0
+/**
+ * @author Kevin Rebolledo - 8-1052-604 
+ * @author Erick Santa Maria - 8-1067-91
+ * @version 1.0
  */
 public class PerfilEstudianteUTP {
 
@@ -10,32 +11,27 @@ public class PerfilEstudianteUTP {
         // NIVEL 1: IDENTIFICADORES Y TIPOS DE DATOS PRIMITIVOS
         // ==============================================================
         
-        // TODO 2.1: Corrige este identificador ilegal (inicia con un número) a camelCase
-        String 1erNombre = "Carlos Pérez";
+        // TODO 2.1: Corrige este identificador ilegal (inicia con un numero) a camelCase
+        String primerNombre = "Carlos Perez";
 
         // TODO 2.2: Corrige este identificador ilegal (usa un guion medio) a camelCase
-        int creditos-matriculados = 18;
+        int creditosMatriculados = 18;
 
         // TODO 2.3: Corrige el tipo de dato para almacenar el costo exacto con decimales (15.50)
-        int costoCredito = 15.50;
+        double costoCredito = 15.50;
 
         // TODO 2.4: Corrige el tipo de dato al tipo primitivo boolean (sin comillas de texto)
-        String estaPazYSalvo = "true";
+        boolean estaPazYSalvo = true;
 
-        // TODO 2.5: Declara una variable de tipo char con la inicial del segundo nombre
-        // Nombre de variable: inicialSegundoNombre | Valor de prueba: 'M'
-        
-
+        // TODO 2.5: Variable de tipo char con la inicial del segundo nombre
+        char inicialSegundoNombre = 'M';
 
         // ==============================================================
         // NIVEL 2: CONSTANTES (final) E INMUTABILIDAD
         // ==============================================================
         
-        // TODO 3.1: Declara la constante de la cuota con 'final' y convención UPPER_SNAKE_CASE (5.00)
-        double carnet_estudiantil = 5.00;
-
-        // TODO 3.2: Elimina la siguiente línea que viola la inmutabilidad de la constante
-        carnet_estudiantil = 10.00;
+        // TODO 3.1: Declara la constante de la cuota con 'final' y convencion UPPER_SNAKE_CASE (5.00)
+        final double CARNET_ESTUDIANTIL = 5.00;
 
 
         // ==============================================================
@@ -43,13 +39,13 @@ public class PerfilEstudianteUTP {
         // ==============================================================
         
         // TODO 4: Utiliza tus variables y constantes corregidas para calcular subtotal y total
-        double subtotalMatricula = creditos-matriculados * costoCredito;
-        double totalPagar = subtotalMatricula + carnet_estudiantil;
+        double subtotalMatricula = creditosMatriculados * costoCredito;
+        double totalPagar = subtotalMatricula + CARNET_ESTUDIANTIL;
 
         System.out.println("==========================================");
         System.out.println("    FICHA DE MATRÍCULA ESTUDIANTIL UTP");
         System.out.println("==========================================");
-        System.out.println("Estudiante : " + 1erNombre);
+        System.out.println("Estudiante : " + primerNombre);
         System.out.println("Paz y Salvo: " + estaPazYSalvo);
         System.out.println("Subtotal   : $" + subtotalMatricula);
         System.out.println("Total      : $" + totalPagar);
